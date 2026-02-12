@@ -426,7 +426,8 @@ header::after {
   height: 8rem;
   width: 100%;
   content: "";*/
-  content: "";
+
+  /*content: "";
   position: absolute;
   z-index: 10;
   left: calc(50% - 20px);
@@ -435,7 +436,18 @@ header::after {
   height: 0px;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid #FFC800;
+  border-top: 20px solid #FFC800;*/
+
+  content: "";
+  position: absolute;
+  left: calc(50% - 15px);
+  bottom: -15px;
+  width: 30px;
+  height: 30px;
+  background: #FFC800;
+  transform: rotate(45deg);
+  border-bottom-right-radius: 3px;
+  z-index: 10;
 }
 
 .navbar-light {
@@ -547,13 +559,13 @@ button#top {
 .projects-title,
 .about-title {
   position: absolute;
-  top: 12.5rem;
+  top: 13.5rem;
   rotate: 270deg;
   line-height: 3rem;
   height: 3rem;
-  left: -45px;
-  font-size: 1.6rem;
-  width: 12rem;
+  left: -55px;
+  font-size: 1.8rem;
+  width: 14rem;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -583,14 +595,14 @@ button#top {
   .projects-container::after {
     content: "";
     position: absolute;
+    left: calc(50% - 15px);
+    bottom: -15px;
+    width: 30px;
+    height: 30px;
+    background: #F2EAE2;
+    transform: rotate(45deg);
+    border-bottom-right-radius: 3px;
     z-index: 10;
-    left: calc(50% - 20px);
-    bottom: -2rem;
-    width: 0px;
-    height: 0px;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #F2EAE2;
   }
 
   h3 {
@@ -769,11 +781,11 @@ button#top {
 
       a {
         text-transform: uppercase;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         line-height: 1;
         font-weight: 700;
-        color: #F2EAE2;
-        /*background-color: #2A2829;*/
+        color: #FFFFFFE0;
+
         display: inline-block;
         padding: 1rem;
         text-decoration: none;
@@ -781,9 +793,9 @@ button#top {
         text-shadow: 1px 1px #2A2829;
 
         &:hover {
-          color: #2A2829;
-          background-color: #FFC800;
-          text-shadow: none;
+          /*color: #FFFFFFE0;*/
+          background-color: #2A2829;
+          text-shadow: unset;
         }
       }
     }
@@ -847,6 +859,15 @@ button#top {
   background-color: #FFFFFFE0;
   position: relative;
 
+  /*background-image: url('./img/chris-01.jpg');*/
+  background-image: linear-gradient(to right,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%),
+    url('./img/chris-01.jpg');
+  background-repeat: no-repeat;
+  background-size: auto calc(100% - 16rem);
+  background-position: calc(100% + 8rem) calc(100% + 1px);
+
   .about-container {
     padding: 0;
     width: 50%;
@@ -882,14 +903,14 @@ button#top {
   .about-container::after {
     content: "";
     position: absolute;
+    left: calc(50% - 15px);
+    bottom: -7.5rem;
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    transform: rotate(45deg);
+    border-bottom-right-radius: 3px;
     z-index: 10;
-    left: calc(50% - 20px);
-    bottom: -8rem;
-    width: 0px;
-    height: 0px;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #FFFFFF;
   }
 }
 
@@ -970,7 +991,7 @@ ul li.pill-item {
   margin-right: .75rem;
   /*line-height: 1;*/
   font-size: 1.4rem;
-  letter-spacing: 1px;
+  /*letter-spacing: 1px;*/
 }
 
 
@@ -1091,6 +1112,15 @@ ul li.pill-item {
         width: calc(50% - 2rem) !important;
         border: unset;
         border-radius: unset;
+
+        margin-left: -4rem;
+        transition: all 1s ease;
+        margin-right: 4rem;
+
+        &:hover {
+          margin-left: 0;
+          margin-right: 0;
+        }
       }
     }
   }
@@ -1189,7 +1219,7 @@ ul li.pill-item {
 
       figure {
         /*background-color: #2A2829;*/
-        padding: 0 4rem 4rem 4rem;
+        padding: 0 4rem 4rem 0;
       }
 
       a:hover img {
@@ -1206,7 +1236,7 @@ ul li.pill-item {
       margin-bottom: 1rem;
       color: #7f7d7e;
       font-family: 'PT Sans', sans-serif;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       line-height: 1.2;
     }
   }
@@ -1351,13 +1381,40 @@ footer {
 }
 
 /* Max-width Responsive Breakpoints */
+@media (max-width: 1535.98px) {
+  .portfolio-wall {
+
+    .mask:first-child,
+    .mask:nth-last-child(2) {
+      display: none;
+    }
+  }
+
+  #about {
+    background-position: calc(100% + 16rem) calc(100% + 1px);
+  }
+}
+
 @media (max-width: 1439.98px) {
   .portfolio-wall .mask img {
     width: 175%;
   }
+
+  #about {
+    background-size: auto calc(100% - 20rem);
+  }
 }
 
 @media (max-width: 1279.98px) {
+  #about {
+    background-image: none;
+
+    .about-container {
+      width: unset;
+      padding: 0 8rem;
+    }
+  }
+
   .portfolio-wall .mask img {
     top: -10%;
   }
@@ -1507,6 +1564,7 @@ footer {
       right: unset;
       top: unset;
       margin-bottom: unset;
+      padding-left: 4rem;
     }
   }
 
@@ -1639,6 +1697,12 @@ footer {
 
 @media (max-width: 767.98px) {
 
+  .portfolio-wall .mask:nth-last-child(3),
+  .portfolio-wall .mask:nth-last-child(4) {
+    display: none;
+  }
+
+
   header::after {
     /*display: none;*/
   }
@@ -1698,9 +1762,8 @@ footer {
 
 @media (max-width: 575.98px) {
 
-  .portfolio-wall .mask:nth-last-child(3),
-  .portfolio-wall .mask:nth-last-child(4) {
-    display: none;
+  #about .about-container::after {
+    bottom: -9.5rem;
   }
 
   .modal-container .modal-body .hero-modal {

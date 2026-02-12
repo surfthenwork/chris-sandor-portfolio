@@ -112,7 +112,7 @@
                         </span>
                     </h1>
                     <p>A creative UX engineer blending visual design and accessible front-end development for
-                        interactive, mobile-responsive websites and web apps.</p>
+                        interactive, mobile-responsive websites and web applications.</p>
                 </div>
                 <!--div class="hero-img"><img src="img/hero-chris.jpg" alt="{{pageTitle}}"></div-->
                 <!--div class="clearfix"></div-->
@@ -239,7 +239,7 @@
         </section>
 
         <div class="row portfolio-wall">
-            <div ng-repeat="item in projects | filter: { category: 'dribbble' }" class="col mask"><img src="./img/projects/thumbs/{{item.img}}">
+            <div ng-repeat="item in projects | filter: { category: 'dribbble' } | limitTo: 8" class="col mask"><img src="./img/projects/thumbs/{{item.img}}">
             </div>
             <div class="overlay">
                 <div class="btn cta"><a href="https://dribbble.com/chrissandor"
@@ -256,7 +256,7 @@
                 <div class="content">
                     <p>I am a creative UX engineer based in North San Diego County with over 20 years of experience
                         blending visual design and accessible front-end development for interactive, mobile-responsive
-                        websites and web apps.</p>
+                        websites and web applications.</p>
                     <p>Skilled in HTML5, CSS3/Sass, JavaScript, and frameworks like AngularJS, Vue.js, Bootstrap and
                         LAMP, I bring designs to life with pixel-perfect precision and performance in mind. I'm also
                         experienced with ServiceNow's Service Portal, WordPress custom theming, and tools like Figma and
@@ -274,18 +274,7 @@
             </div>
         </section>
 
-        <div class="row bio-wall">
-            <div class="col-4"></div>
-            <div class="col-2 mobile">
-                <img src="./img/chris-01.jpg">
-            </div>
-            <div class="col-4">
-                <img src="./img/chris-03.jpg">
-            </div>
-            <div class="col-2">
-                <img src="./img/chris-02.jpg">
-            </div>
-        </div>
+
 
         <section class="about-details">
             <div class="container-fluid about-details-container">
@@ -345,6 +334,20 @@
                 </div>
             </div>
         </section>
+
+        <div class="row bio-wall" style="display: none;">
+            <div class="col-4"></div>
+            <div class="col-2 mobile">
+                <img src="./img/chris-01.jpg">
+            </div>
+            <div class="col-4">
+                <img src="./img/chris-03.jpg">
+            </div>
+            <div class="col-2">
+                <img src="./img/chris-02.jpg">
+            </div>
+        </div>
+
     </main>
 
     <footer>

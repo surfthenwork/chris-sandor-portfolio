@@ -8,7 +8,7 @@
         "heroModal": "featured-cmic.png",
         "caseStudy": true,
         "caseStudyDetails": {
-            "overview": "California Mutual Insurance Company, a provider of insurance products and services, faced the challenge of migrating off Adobe Business Catalyst—a platform approaching end-of-life. The solution involved designing and developing a custom WordPress CMS theme tailored to their brand and functional needs. This effort encompassed several key initiatives, including rebranding the corporate website to reflect a modernized identity, migrating all content and services from the legacy CMS to a new, secure server environment, and rebuilding the website with responsive front-end markup and user-centric design principles.",
+            "overview": "California Mutual Insurance Company needed to transition away from Adobe Business Catalyst as the platform approached end-of-life. To address this, a custom WordPress theme was designed and developed to support their branding, content management needs, and future scalability. The project included a full visual refresh of the corporate website, migration of existing content and services to a secure hosting environment, and a responsive rebuild using modern front-end standards to ensure a consistent, user-friendly experience across devices.",
             "responsibilities": [
                 "Creative Direction",
                 "Wireframes",
@@ -43,7 +43,7 @@
         "heroModal": "drac-01.png",
         "caseStudy": true,
         "caseStudyDetails": {
-            "overview": "Coming soon.",
+            "overview": "Del Rey Avocado Company required a modernized website that better represented their brand and improved content management capabilities. The solution involved designing and developing a custom WordPress theme focused on clean visuals, intuitive navigation, and flexible content editing through Advanced Custom Fields. The project included a complete redesign of the existing site, creation of responsive front-end templates, and implementation of a scalable CMS architecture to support ongoing updates and future growth, while ensuring a consistent experience across desktop and mobile devices.",
             "responsibilities": [
                 "Creative direction",
                 "Wireframes",
@@ -74,7 +74,7 @@
         "modalSlug": "capc",
         "heroModal": "capc-03.png",
         "caseStudyDetails": {
-            "overview": "Coming soon.",
+            "overview": "Monterey County Child Abuse Prevention Council needed a website aligned with updated brand guidelines and built on a flexible CMS that provided a platform for sharing resources and community information. The project included designing the user interface from the new visual identity, developing a custom WordPress theme with Advanced Custom Fields, and creating a temporary “Coming Soon” page with an email sign-up form during development. The final site was built with responsive, modern front-end standards to ensure a consistent experience across devices.",
             "responsibilities": [
                 "Creative direction",
                 "Wireframes",
@@ -100,7 +100,7 @@
     },
     {
         "heading": "Olive Hill Greenhouses",
-        "subHeading": "Website Redesign, CMS Implementation and Email Marketing Design Templates",
+        "subHeading": "Website Redesign, CMS Implementation and Email Marketing Design",
         "featured": "featured-ohg.png",
         "featuredPosition": "right",
         "url": "https://olivehill.net/",
@@ -108,7 +108,7 @@
         "modalSlug": "ohg",
         "heroModal": "ohg-01.png",
         "caseStudyDetails": {
-            "overview": "Coming soon.",
+            "overview": "Olive Hill Greenhouses required a modern redesign and a transition away from a legacy ASP website backed by a Microsoft Access database. The project involved designing and developing a custom WordPress theme with Advanced Custom Fields, rebuilding the site with responsive front-end standards, and creating email marketing templates aligned with the brand. A custom plant catalog database was also developed, allowing users to refine results by type, size, color, and light level, improving usability and product discovery.",
             "responsibilities": [
                 "Creative direction",
                 "Wireframes",
@@ -124,7 +124,8 @@
                 "jQuery",
                 "Mobile Responsive Breakpoints",
                 "Adobe Illustrator",
-                "Adobe Photoshop"
+                "Adobe Photoshop",
+                "Email Design"
             ],
             "media": [
                 "ohg-02.jpg",
@@ -143,7 +144,7 @@
         "modalSlug": "br",
         "caseStudy": true,
         "caseStudyDetails": {
-            "overview": "Coming soon.",
+            "overview": "Booth Ranches required a refreshed website that modernized their online presence and improved content management. The project included redesigning the user interface, developing a custom WordPress theme with Advanced Custom Fields, and rebuilding the front end using responsive, modern web standards. Key features included a product area to showcase citrus pack style SKUs and a custom company timeline module, resulting in a flexible CMS and a clean, user-friendly experience across desktop and mobile devices.",
             "responsibilities": [
                 "Creative direction",
                 "Wireframes",
@@ -245,15 +246,15 @@
     },
     {
         "category": "dribbble",
-        "img": "bsi.jpg"
-    },
-    {
-        "category": "dribbble",
         "img": "by.jpg"
     },
     {
         "category": "dribbble",
-        "img": "cfmg.jpg"
+        "img": "bsi.jpg"
+    },
+    {
+        "category": "dribbble",
+        "img": "i.jpg"
     },
     {
         "category": "dribbble",
@@ -265,7 +266,7 @@
     },
     {
         "category": "dribbble",
-        "img": "i.jpg"
+        "img": "cfmg.jpg"
     },
     {
         "category": "dribbble",
