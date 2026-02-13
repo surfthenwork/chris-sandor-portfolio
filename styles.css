@@ -865,8 +865,8 @@ button#top {
       rgba(255, 255, 255, 0) 100%),
     url('./img/chris-01.jpg');
   background-repeat: no-repeat;
-  background-size: auto calc(100% - 16rem);
-  background-position: calc(100% + 8rem) calc(100% + 1px);
+  background-size: auto calc(50%);
+  background-position: calc(100%) calc(100%);
 
   .about-container {
     padding: 0;
@@ -1113,11 +1113,13 @@ ul li.pill-item {
         border: unset;
         border-radius: unset;
 
-        margin-left: -4rem;
+        /*margin-left: -8rem;*/
         transition: all 1s ease;
-        margin-right: 4rem;
+        /*margin-right: 8rem;*/
+      }
 
-        &:hover {
+      figure:hover {
+        img {
           margin-left: 0;
           margin-right: 0;
         }
@@ -1391,7 +1393,7 @@ footer {
   }
 
   #about {
-    background-position: calc(100% + 16rem) calc(100% + 1px);
+    /*background-position: calc(100% + 16rem) calc(100% + 1px);*/
   }
 }
 
@@ -1401,7 +1403,9 @@ footer {
   }
 
   #about {
-    background-size: auto calc(100% - 20rem);
+    /*background-size: auto calc(100% - 20rem);*/
+
+    background-position: calc(100% + 8rem) calc(100%);
   }
 }
 

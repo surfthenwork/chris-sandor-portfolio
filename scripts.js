@@ -18,10 +18,11 @@ app.controller("myCtrl", ['$scope', '$http', '$sce', function ($scope, $http, $s
         });
     }
     preload(
-        "./img/drac-01.png",
-        "./img/capc-03.png",
-        "./img/ohg-01.png",
-        "./img/br-01.png"
+        "./img/hero-modal-cmig.png",
+        "./img/hero-modal-drac.png",
+        "./img/hero-modal-capc.png",
+        "./img/hero-modal-ohg.png",
+        "./img/hero-modal-br.png"
     );
 
     // Load featured projects and handle trusted HTML snippets
