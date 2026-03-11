@@ -108,7 +108,8 @@ small {
 }
 
 .bg-white {
-  background-color: #FFFFFFE0 !important;
+  /*background-color: #FFFFFFE0 !important;*/
+  background-color: #F2EAE2 !important;
 }
 
 .text-muted {
@@ -559,22 +560,38 @@ button#top {
 .projects-title,
 .about-title {
   position: absolute;
-  top: 13.5rem;
-  rotate: 270deg;
-  line-height: 3rem;
-  height: 3rem;
-  left: -55px;
-  font-size: 1.8rem;
-  width: 14rem;
+  /*top: 13.5rem;*/
+  top: -.4rem;
+  /*rotate: 270deg;*/
+  /*line-height: 3rem;*/
+  line-height: 4rem;
+  height: 4rem;
+  /*left: -55px;*/
+  left: 0;
+  font-size: 2.4rem;
+  /*width: 14rem;*/
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: .025rem;
-  color: #2A2829;
-  background-color: #FFC800;
-  /*box-shadow: -2px 2px #7f7d7e;*/
+  /*color: #2A2829;*/
+  /*background-color: #FFC800;*/
+  padding: 0 4rem;
+  -webkit-box-shadow: 4px 0px 2px -2px rgba(42, 40, 41, 0.25);
+  box-shadow: 4px 0px 2px -2px rgba(42, 40, 41, 0.25);
 }
 
+.projects-title {
+  color: #FFFFFFE0;
+  background-color: #2A2829;
+}
+
+.about-title {
+  color: #2A2829;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 4px 0px 2px -2px rgba(242, 234, 226, 0.25);
+  box-shadow: 4px 0px 2px -2px rgba(242, 234, 226, 0.25);
+}
 
 /* Projects */
 #projects {
@@ -582,7 +599,8 @@ button#top {
 }
 
 .projects {
-  background-color: #F2EAE2;
+  /*background-color: #F2EAE2;*/
+  background-color: #2A2829;
   position: relative;
   /*padding-top: 4rem;*/
   /*margin-top: -4rem;*/
@@ -599,7 +617,8 @@ button#top {
     bottom: -15px;
     width: 30px;
     height: 30px;
-    background: #F2EAE2;
+    /*background: #F2EAE2;*/
+    background-color: #2A2829;
     transform: rotate(45deg);
     border-bottom-right-radius: 3px;
     z-index: 10;
@@ -785,17 +804,17 @@ button#top {
         line-height: 1;
         font-weight: 700;
         color: #FFFFFFE0;
-
+        background-color: #2A2829;
         display: inline-block;
         padding: 1rem;
         text-decoration: none;
         transition: all .25s ease;
-        text-shadow: 1px 1px #2A2829;
+        /*text-shadow: 1px 1px #2A2829;*/
 
         &:hover {
           /*color: #FFFFFFE0;*/
           background-color: #2A2829;
-          text-shadow: unset;
+          /*text-shadow: unset;*/
         }
       }
     }
@@ -1113,15 +1132,15 @@ ul li.pill-item {
         border: unset;
         border-radius: unset;
 
-        /*margin-left: -8rem;*/
+        margin-left: 4rem;
         transition: all 1s ease;
         /*margin-right: 8rem;*/
       }
 
       figure:hover {
         img {
-          margin-left: 0;
-          margin-right: 0;
+          /*margin-left: 0;*/
+          /*margin-right: 0;*/
         }
       }
     }
@@ -1205,12 +1224,7 @@ ul li.pill-item {
       margin-bottom: -8rem;
 
       img {
-        /*border-radius: 1rem;*/
-        /*border-radius: unset !important;*/
-        /*border: solid 2px #7f7d7e80;*/
-        /*border: none !important;*/
-
-        box-shadow: #7f7d7e40 0px 5px 10px;
+        /*box-shadow: #7f7d7e40 0px 5px 10px;*/
         border: solid 1rem #2A2829 !important;
         border-radius: 2rem !important;
       }
@@ -1518,9 +1532,33 @@ footer {
   .hero .hero-message p {
     font-size: 2rem;
   }
+
+  .modal-container {
+    & .modal-body {
+      & .hero-modal {
+        figure img {
+          width: calc(50% + 6rem) !important;
+          margin-left: -4rem;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 991.98px) {
+
+  .modal-container .modal-body article .media {
+    figure {
+      text-align: center;
+
+      img {
+        max-width: 600px;
+      }
+    }
+  }
+
+
+
 
   .projects-title,
   .about-title {
@@ -1560,6 +1598,13 @@ footer {
       .sticky {
         top: unset;
       }
+
+      ul {
+        column-count: 3;
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-gap: 4rem;
+      }
     }
 
     .media {
@@ -1569,6 +1614,7 @@ footer {
       top: unset;
       margin-bottom: unset;
       padding-left: 4rem;
+      background-color: #F2EAE2;
     }
   }
 
@@ -1599,7 +1645,6 @@ footer {
       /*left: 4rem;*/
     }
   }
-
 
   #about .about-container {
     width: unset;
@@ -1648,6 +1693,16 @@ footer {
 }
 
 @media (max-width: 823.98px) {
+  .modal-container {
+    & .modal-body {
+      & .hero-modal {
+        figure img {
+          margin-left: -2rem;
+        }
+      }
+    }
+  }
+
   .about-details .grid {
     gap: 4rem;
     /*grid-template-columns: repeat(auto-fill, minmax(calc(30%), 1fr));*/
@@ -1665,7 +1720,7 @@ footer {
   .modal-container .modal-body .hero-modal {
     padding-bottom: 4rem;
     padding-top: 4rem;
-    padding-right: 8rem;
+    padding-right: 4rem;
 
     h2 {
       font-size: 2.8rem;
@@ -1700,6 +1755,11 @@ footer {
 }
 
 @media (max-width: 767.98px) {
+  .modal-container .modal-body article ul {
+    column-count: 2 !important;
+    -webkit-column-count: 2 !important;
+    -moz-column-count: 2 !important;
+  }
 
   .portfolio-wall .mask:nth-last-child(3),
   .portfolio-wall .mask:nth-last-child(4) {
@@ -1765,13 +1825,19 @@ footer {
 }
 
 @media (max-width: 575.98px) {
+  .modal-container .modal-body article ul {
+    column-count: unset !important;
+    -webkit-column-count: unset !important;
+    -moz-column-count: unset !important;
+    column-gap: unset !important;
+  }
 
   #about .about-container::after {
     bottom: -9.5rem;
   }
 
   .modal-container .modal-body .hero-modal {
-    padding-right: 4rem;
+    /*padding-right: 4rem;*/
   }
 
   .bio-wall {
@@ -1824,7 +1890,7 @@ footer {
 
   .modal-container .modal-body {
     article .media figure {
-      padding: 0 2rem 2rem 2rem;
+      padding: 0 4rem 2rem 0;
     }
 
     .hero-modal {
@@ -1938,6 +2004,36 @@ footer {
 }
 
 @media (max-width: 413.98px) {
+
+  .modal-container .modal-body article {
+    .details {
+      padding: 0 2rem;
+    }
+  }
+
+  .modal-container .modal-body {
+    & .hero-modal {
+      figure figcaption {
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  .modal-container .modal-body .hero-modal {
+    padding-right: 2rem;
+  }
+
+  .modal-container .modal-body article {
+    .media {
+      padding-left: 2rem;
+    }
+  }
+
+  .modal-container .modal-body {
+    article .media figure {
+      padding-right: 2rem;
+    }
+  }
 
   footer {
     padding: .65rem 0;
